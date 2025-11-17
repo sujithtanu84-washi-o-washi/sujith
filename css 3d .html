@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>3D Transform Variation</title>
+  <style type="text/css">
+    .scene {
+      width: 220px;
+      height: 220px;
+      border: 2px dashed #444;
+      perspective: 400px;
+      margin: 80px;
+      float: left;
+    }
+
+    .card1, .card2 {
+      width: 200px;
+      height: 140px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 1s;
+    }
+
+    .card1 {
+      background-color: mediumseagreen;
+      transform: rotateY(25deg);
+      transform-origin: left;
+    }
+
+    .card2 {
+      background-color: tomato;
+      transform: rotate3d(0, 1, 1, 25deg);
+    }
+
+    .card1:hover {
+      transform: rotateY(0deg);
+    }
+
+    .card2:hover {
+      transform: rotate3d(0, 1, 1, 0deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scene">
+    <div class="card1"></div>
+  </div>
+
+  <div class="scene">
+    <div class="card2"></div>
+  </div>
+
+</body>
+</html>

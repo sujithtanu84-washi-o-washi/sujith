@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+div {
+  width: 160px;
+  height: 160px;
+  background-color: lightgreen;
+  border: 2px dashed darkgreen;
+  margin: 15px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#box1 {
+  transform: matrix(1, 0.2, 0, 1, 0, 0); /* slight skew on Y-axis */
+  background-color: lightcoral;
+}
+
+#box2 {
+  transform: matrix(1, 0, -0.4, 1, 100, 50); /* skew on X-axis + move */
+  background-color: lightskyblue;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Transform: matrix()</h2>
+<p>The <code>matrix()</code> function lets you apply multiple 2D transformations at once.</p>
+
+<div>
+This is a regular box.
+</div>
+
+<div id="box1">
+This box is skewed vertically using matrix().
+</div>
+
+<div id="box2">
+This box is skewed horizontally and moved using matrix().
+</div>
+
+</body>
+</html>
